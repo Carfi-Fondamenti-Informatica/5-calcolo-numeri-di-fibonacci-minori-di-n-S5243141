@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int n=0, a=0, b=1, c=0;
+    int n=0, a=1, b=1, c=0;
 
     cin >> n;
 
@@ -12,6 +12,9 @@ int main(){
         b=c;
         if (c<=n) {
             cout << c << endl;
+            c=a+b;
+            a=b;
+            b=c;
         }
     }
     return 0;
