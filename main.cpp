@@ -6,11 +6,13 @@ int main(){
 
     cin >> n;
 
-    for (int i=1; i<=n; i++) {
+    if (n>0) {
+        cout << a << endl;
+        cout << b << endl;
         c=a+b;
         a=b;
         b=c;
-        if (c<=n) {
+        while (c<=n) {
             cout << c << endl;
             c=a+b;
             a=b;
